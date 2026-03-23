@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Doctors — Hopewell Clinic</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">Hopewell Clinic</a>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="doctors.html" class="active">Doctors</a>
+          <a href="appointments.html">Appointments</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="nav-toggle">☰</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Meet Our Providers</h1>
+
+      <section class="providers">
+        <article class="provider-card">
+          <img src="clinic.image/Anna.jpeg" class="avatar" />
+          <h3>Dr. Anna Smith</h3>
+          <p>MD — Primary Care</p>
+          <p>12+ years of experience in family medicine.</p>
+        </article>
+
+        <article class="provider-card">
+          <img src="clinic.image/Chen.jpeg" class="avatar" />
+          <h3>Dr. Michael Chen</h3>
+          <p>MD — Pediatrics</p>
+          <p>Specialist in child health, growth, and development.</p>
+        </article>
+
+        <article class="provider-card">
+          <img src="clinic.image/lee.jpeg" class="avatar" />
+          <h3>NP Sam Lee</h3>
+          <p>Family Nurse Practitioner</p>
+          <p>Focus on preventive care and chronic condition support.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© Hopewell Clinic</p>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".main-nav");
+      toggle.onclick = () => nav.classList.toggle("open");
+    </script>
+  </body>
+</html>

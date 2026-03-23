@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Hopewell Clinic</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">Hopewell Clinic</a>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="doctors.html">Doctors</a>
+          <a href="appointments.html">Appointments</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <button class="nav-toggle">☰</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Contact & Location</h1>
+
+      <div class="split">
+        <div>
+          <p><strong>Address:</strong><br />123 Hopewell Ave, Chicago, IL</p>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p>
+            <strong>Hours:</strong><br />Mon-Fri: 8 AM – 6 PM<br />Sat: 9 AM – 1
+            PM
+          </p>
+
+          <h3>Directions</h3>
+          <p>
+            Located near the campus center with available street and garage
+            parking.
+          </p>
+        </div>
+
+        <div>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.825922496718!2d-87.6270052!3d41.8818326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zNDF°IDUyJzU0LjYiTiA4N8KwMzcnMzcuMiJX!5e0!3m2!1sen!2sus!4v160643"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© Hopewell Clinic</p>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".main-nav");
+      toggle.onclick = () => nav.classList.toggle("open");
+    </script>
+  </body>
+</html>

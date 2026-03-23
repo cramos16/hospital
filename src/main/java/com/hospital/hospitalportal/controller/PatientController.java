@@ -1,6 +1,6 @@
 package com.hospital.hospitalportal.controller;
 
-import com.hospital.hospitalportal.model.Patient;
+import com.hospital.hospitalportal.entity.Patient;
 import com.hospital.hospitalportal.repository.PatientRepository;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

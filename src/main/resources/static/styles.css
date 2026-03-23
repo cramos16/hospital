@@ -1,0 +1,222 @@
+:root {
+  --primary: #1B8DBE;
+  --secondary: #0F5A7A;
+  --light: #E8F5FA;
+  --dark: #123;
+  --muted: #666;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7fafc;
+  color: #222;
+}
+
+/* Layout */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+.site-header {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .06);
+  position: relative;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+  color: var(--dark);
+  border-radius: 6px;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  background: var(--light);
+}
+
+/* Mobile nav */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+}
+
+/* Hero */
+.hero {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+/* Buttons */
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Features */
+.features {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.features article {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+}
+
+/* Split layout */
+.split {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.responsive-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Doctors grid */
+.providers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.provider-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
+}
+
+.avatar {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Forms */
+.appointment-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+}
+
+input,
+select,
+textarea {
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Map */
+.map {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 2rem;
+  background: white;
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .split {
+    flex-direction: column;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    position: absolute;
+    right: 1rem;
+    top: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}

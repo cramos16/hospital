@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services — Hopewell Clinic</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">Hopewell Clinic</a>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="doctors.html">Doctors</a>
+          <a href="appointments.html">Appointments</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="nav-toggle">☰</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Our Services</h1>
+
+      <section class="service-list">
+        <article>
+          <h2>Primary Care</h2>
+          <p>
+            Checkups, chronic condition management, and preventive screenings.
+          </p>
+        </article>
+        <article>
+          <h2>Pediatrics</h2>
+          <p>Well-child visits, vaccinations, and growth monitoring.</p>
+        </article>
+        <article>
+          <h2>Women’s Health</h2>
+          <p>Routine exams, reproductive care, and family planning.</p>
+        </article>
+        <article>
+          <h2>Lab Services</h2>
+          <p>Blood tests, urinalysis, and fast diagnostic results.</p>
+        </article>
+        <article>
+          <h2>Mental Health</h2>
+          <p>
+            Counseling and referrals for emotional and psychological support.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© Hopewell Clinic</p>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".main-nav");
+      toggle.onclick = () => nav.classList.toggle("open");
+    </script>
+  </body>
+</html>

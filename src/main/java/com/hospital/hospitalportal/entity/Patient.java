@@ -1,4 +1,4 @@
-package com.hospital.hospitalportal.model;
+package com.hospital.hospitalportal.entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hopewell Clinic — Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">Hopewell Clinic</a>
+        <nav class="main-nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="services.html">Services</a>
+          <a href="doctors.html">Doctors</a>
+          <a href="appointments.html">Appointments</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="nav-toggle">☰</button>
+      </div>
+    </header>
+
+    <section
+      class="hero"
+      style="background-image: url('clinic.image/Chome.jpeg')"
+    >
+      <div class="hero-overlay">
+        <h1>Your Health. Our Priority.</h1>
+        <p>
+          Professional and compassionate care for students, families, and the
+          community.
+        </p>
+        <a href="appointments.html" class="btn">Book Appointment</a>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article>
+        <h3>Primary Care</h3>
+        <p>Routine wellness exams and preventive care.</p>
+      </article>
+      <article>
+        <h3>Lab Services</h3>
+        <p>On-site bloodwork and diagnostics.</p>
+      </article>
+      <article>
+        <h3>Telehealth</h3>
+        <p>Virtual visits from home or campus.</p>
+      </article>
+    </section>
+
+    <section class="about container">
+      <div class="split">
+        <div>
+          <h2>About Our Clinic</h2>
+          <p>
+            Hopewell Clinic provides trusted, patient-centered medical care. Our
+            team is made up of board-certified physicians and experienced nurse
+            practitioners.
+          </p>
+          <ul>
+            <li>Monday–Friday: 8am–6pm</li>
+            <li>Most insurance accepted</li>
+            <li>Student & low-cost options available</li>
+          </ul>
+        </div>
+
+        <div>
+          <img
+            src="clinic.image/patient.jpeg"
+            class="responsive-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Hopewell Clinic</p>
+      </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector(".nav-toggle");
+        const nav = document.querySelector(".main-nav");
+        toggle.onclick = () => nav.classList.toggle("open");
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
